@@ -10,7 +10,7 @@ export function Navigation() {
             <img src={Logo} alt="" />
             <ul>
                 <li>
-                    <Link to="/forside">Forside</Link>
+                    <Link to="/frontpage">Forside</Link>
                 </li>
                 <li>
                     <Link to="/hotelsandDes">Hoteller og Destinationer</Link>
