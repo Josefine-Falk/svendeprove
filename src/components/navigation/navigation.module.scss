@@ -1,0 +1,26 @@
+@import '../../styles//theme.scss';
+
+nav{
+   background-color: $bg-black;
+
+
+   li{
+       color: $text-white;
+       display: inline;
+       padding: 15px;
+       border-right: 1px solid $text-white;
+   }
+   a{
+       color: $text-white;
+       text-decoration: none;
+   }
+   ul{
+       list-style-type: none;
+   }
+   li a:hover{
+       color: $bg-red;
+   }
+}
+h2{
+    color: $text-white;
+}
