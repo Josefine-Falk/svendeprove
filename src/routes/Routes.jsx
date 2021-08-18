@@ -1,5 +1,6 @@
 import {
     Route,
+    Redirect,
     Switch,
 } from "react-router-dom";
 import { Frontpage} from "../pages/FrontPage/FrontPage";
