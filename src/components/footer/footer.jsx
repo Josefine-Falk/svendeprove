@@ -7,7 +7,7 @@ export function Footer() {
         <footer className={Style.container}>
             <p>© 2019 Hotel Overlook Alle rettigheder forbeholdt.</p>
             <img src={SocialMedia} alt="Social_media_" />
-            <ul>
+            <ul className={Style.navul}>
                 <li>Forside</li>
                 <li>Hoteller og destinationer</li>
                 <li>Værelser</li>

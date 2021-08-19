@@ -2,6 +2,8 @@
 
 nav{
    background-color: $bg-black;
+   display: grid;
+   grid-template-columns: 50% 50%;
 
 
    li{
@@ -16,11 +18,15 @@ nav{
    }
    ul{
        list-style-type: none;
+       position: relative;
+       top: 30%;
    }
    li a:hover{
        color: $bg-red;
    }
-}
-h2{
-    color: $text-white;
+
+   img{
+       position: relative;
+       left: 10%;
+   }
 }
