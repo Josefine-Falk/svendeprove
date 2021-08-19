@@ -1,0 +1,16 @@
+@import '../../styles//theme.scss';
+ul{
+    list-style-type: none;
+    li{
+        color: $bg-grey;
+        display: inline;
+        padding: 10px;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 30% 55%;
+    align-items: center;
+    justify-items: center;
+}

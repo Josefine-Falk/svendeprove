@@ -1,5 +1,5 @@
 import React from "react";
-import Slide1 from '../../assets/frankfurt-skyline-germany.png';
+import Slide1 from '../../assets/Slider1.png';
 import Slide3 from '../../assets/frankfurt-skyline-germany3.png';
 import Style from './Slider.module.scss';
 import Carousel from 'react-material-ui-carousel';
@@ -9,7 +9,6 @@ export function Slider() {
     const carouselItems = [
         {
             url: Slide1,
-            description: "Velkommen til Hotel Overlook",
             alt: "velkommen_til_hotel_overlook"
         },
         {
