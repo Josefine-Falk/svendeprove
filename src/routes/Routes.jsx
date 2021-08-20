@@ -3,10 +3,10 @@ import {
     Switch,
 } from "react-router-dom";
 import { Frontpage} from "../pages/FrontPage/FrontPage";
-import { HotelsandDesPage } from "../pages/HotelsandDesPage/HotelsandDesPage";
 import { LoginPage } from '../pages/LoginPage/LoginPage';
 import { ResevationsPage } from "../pages/ResevationsPage/ResevationsPage";
 import { RoomPage } from "../pages/RoomPage/RoomPage";
+import { HotelsPage} from "../pages/HotelsPage/Hotels";
 
 
 export function Routes () {
@@ -17,8 +17,8 @@ export function Routes () {
                 <Frontpage/>
             </Route>
 
-            <Route exact path="/hotelsanddespage">
-                <HotelsandDesPage/>
+            <Route exact path="/hotels">
+                <HotelsPage/>
             </Route>
 
             <Route exact path="/roompage">

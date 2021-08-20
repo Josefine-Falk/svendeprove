@@ -10,10 +10,10 @@ export function Login() {
 
     const {message, setMessage } = useState("Indtast login oplysninger")
 
-    const onSubmit = (data, e) => sendLoginRequest(data, e);
-
     const { register, handleSubmit, formState:{errors}} = useForm();
-
+    
+    const onSubmit = (data, e) => sendLoginRequest(data, e);
+    
     const sendLoginRequest = async (data, e) => {
         e.target.reset()
         let formData = new FormData()

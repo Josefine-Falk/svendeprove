@@ -18,8 +18,6 @@ export async function doFetch(url, type, data, key) {
     }
   }
 
-// Alternativ metode med to forskellige fetch funktioner
-// Bruger authentication token som key
 
   export async function getAuthData(url, key) {
 

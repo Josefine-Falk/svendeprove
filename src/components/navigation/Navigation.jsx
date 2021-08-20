@@ -13,7 +13,7 @@ export function Navigation() {
                     <Link to="/frontpage">Forside</Link>
                 </li>
                 <li>
-                    <Link to="/hotelsandDes">Hoteller og Destinationer</Link>
+                    <Link to="/hotels">Hoteller og Destinationer</Link>
                 </li>
                 <li>
                     <Link to="/roompage">Værelser</Link>
