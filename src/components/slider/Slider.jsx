@@ -32,7 +32,7 @@ export function Slider() {
     return(
         <>
         {/* Carousel slide med interval skift efter 5 sekunder */}
-        <Carousel animation="fade" interval="5000">
+        <Carousel animation="fade" interval="5000" indicators={false}>
             {
             carouselItems.map((item, index) => {
                 return(

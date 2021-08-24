@@ -26,7 +26,7 @@ export function Hero() {
 
     return(
         <>
-        <Carousel animation="fade" interval="5000">
+        <Carousel animation="fade" interval="5000" indicators={false}>
             {
                 carouselItems.map((items, index) => {
                     return(
