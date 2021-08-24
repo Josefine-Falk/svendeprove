@@ -6,6 +6,7 @@ import Carousel from 'react-material-ui-carousel';
 
 export function Slider() {
     
+    //Const med de items jeg skal have i carousel, med en url til img, en description og alt-tekst
     const carouselItems = [
         {
             url: Slide1,
@@ -18,6 +19,7 @@ export function Slider() {
         }
     ]
 
+    //Function til hente slidebilleder ned, med description og alt-tekst
     function Item(props){
         return (
             <div className={Style.slide} style={{Height:"65vh"}}>
@@ -29,6 +31,7 @@ export function Slider() {
 
     return(
         <>
+        {/* Carousel slide med interval skift efter 5 sekunder */}
         <Carousel animation="fade" interval="5000">
             {
             carouselItems.map((item, index) => {
