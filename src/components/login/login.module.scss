@@ -1,0 +1,23 @@
+.annuler{
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+
+}
+.Send{
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+input{
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+}
+input::placeholder{
+    color: black;
+}

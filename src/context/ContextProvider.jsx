@@ -4,7 +4,7 @@ const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
 
-  const [loginData, setLoginData] = useState([]);
+  const [loginData, setLoginData] = useState("");
 
   useEffect(() => {
     if (sessionStorage.getItem("token")) {

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { AppContext } from '../../context/ContextProvider';
 import { doFetch } from '../../helpers/fetch';
+import Style from './login.module.scss';
 
 
 export function Login() {
@@ -53,6 +54,7 @@ export function Login() {
     return (
         <>
         <h1>Login</h1>
+        <p>Indtast dit brugernavn og adgangsode for at logge ind</p>
           <p>{message}</p>
           {!loginData && !loginData.username ?  
               <form onSubmit={handleSubmit(onSubmit)}>
@@ -65,8 +67,8 @@ export function Login() {
                           {errors.password && <span>Udfyld adgangskode</span> }
                   </div>
                   <div>
-                      <button type="reset">Annuller</button>
-                      <button type="submit">Send</button>
+                      <button className={Style.annuler} type="reset">Annuller</button>
+                      <button className={Style.Send} type="submit">Login</button>
                   </div>
               </form> 
           :

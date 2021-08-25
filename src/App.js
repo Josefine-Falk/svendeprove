@@ -7,7 +7,7 @@ import { Routes } from './routes/Routes';
 function App() {
   return (
    <AppContextProvider>
-     <Router basename="/hotel overlook">
+     <Router basename="/hoteloverlook">
         <Navigation/>
         <Routes/>
      </Router>
