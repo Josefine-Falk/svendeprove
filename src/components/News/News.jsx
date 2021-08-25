@@ -21,12 +21,14 @@ export const News = () => {
         <h3>Sidst nyt</h3>
         <ul className={Style.grid_container}>{apiData && apiData.items.splice(0,3).map((item, key) => {
             return(
-                <figure>       
-                <li key={key}>                
+                       
+                <li key={key}>  
+                <figure>
                     <img className={Style.images} src={item.image} alt="" />
                     <figcaption>{item.title}</figcaption>
+                 </figure>    
                 </li>
-                </figure>
+               
             )
         })}</ul>
         </>
