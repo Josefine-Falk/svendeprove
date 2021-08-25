@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { doFetch } from "../../helpers/fetch";
+import Style from './news.module.scss'
 
 export const News = () => {
     const [apiData, setApiData] = useState('');
@@ -18,13 +19,14 @@ export const News = () => {
     return(
         <>
         <h3>Sidst nyt</h3>
-        <ul>{apiData && apiData.items.map((item, key) => {
+        <ul className={Style.grid_container}>{apiData && apiData.items.map((item, key) => {
             return(
-                <li key={key}>
-                    <h4>{item.title}</h4>
-                    <p>{item.teaser}</p>
-                    <img src={item.image} alt="" />
+                <figure>       
+                <li key={key}>                
+                    <img className={Style.images} src={item.image} alt="" />
+                    <figcaption>{item.title}</figcaption>
                 </li>
+                </figure>
             )
         })}</ul>
         </>
