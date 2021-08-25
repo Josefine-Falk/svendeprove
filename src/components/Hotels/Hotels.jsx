@@ -25,6 +25,7 @@ export const Hotels = () => {
                 <p>
                     {item.description}
                 </p>
+                <img src={item.image} alt="" />
 
             </li>
             )
