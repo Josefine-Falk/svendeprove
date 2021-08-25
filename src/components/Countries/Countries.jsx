@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Switch, useParams } from "react-router";
 import { Link } from "react-router-dom";
 import { doFetch } from "../../helpers/fetch";
+import Style from './countries.module.scss';
 
 export const Countries = () => {
     const [apiData, setApiData] = useState('');
@@ -38,8 +39,8 @@ export const Countries = () => {
     return(
         <Switch>
             <Route exact path="/hotels">
-                <p>lande</p>
-                <ul>
+                <p>Lande</p>
+                <ul className={Style.lande}>
                     {apiData && 
                     apiData.items.map((item, key) => {
                         return(
@@ -60,7 +61,7 @@ export const Countries = () => {
 
             <Route exact path="/hotels/:id">
                 <p>Byer i</p>
-                <ul>
+                <ul className={Style.byer}>
                     {apiData_cities && 
                     apiData_cities.items.map((item, key) => {
                         return(
@@ -80,8 +81,8 @@ export const Countries = () => {
             </Route>
 
             <Route exact path="/hotels/:id/:city">
-                <p>hoteller i {id} </p>
-                <ul>
+                <p>Hoteller i {id} </p>
+                <ul className={Style.hoteller}>
                     {apiData_hotels && 
                     apiData_hotels.items.map((item, key) => {
                         return(
