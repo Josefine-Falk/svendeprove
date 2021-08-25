@@ -10,7 +10,7 @@ export const Rooms = () => {
         setApiData(result);
         console.log(result)
     }
-    
+
     useEffect(() => {
         getRooms();
     }, [])
@@ -20,24 +20,23 @@ export const Rooms = () => {
         <>
         <h3>Værelser</h3>
         <ul>{apiData && apiData.items.map((item, key) => {
-            
             return(
                
                 <li key={key}>
+                    <h4>{item.hotel_name}</h4>
+                    <p>{item.room_title}</p>
+                    <p>Beskrivelse {item.description}</p>
+                    <p>Antal personer {item.num_persons}</p>
+                    <p>Pris {item.day_price_normal},-</p>
                     {
                         item.images && item.images.map((image, index) => (
                             <img src={image.image} alt="" />
                         ))
                     }
-                    <h4>{item.hotel_name}</h4>
-                    <p>{item.room_title}</p>
-                    <p>Beskrivelse {item.description}</p>
-                    <p>Antal personer {item.num_persons}</p>
-                    <p>Pris {item.day_price_normal}</p>
                 </li>
-
             )
-        })}</ul>
+        })}
+        </ul>
         </>
     )
 }

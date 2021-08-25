@@ -19,7 +19,7 @@ export const News = () => {
     return(
         <>
         <h3>Sidst nyt</h3>
-        <ul className={Style.grid_container}>{apiData && apiData.items.map((item, key) => {
+        <ul className={Style.grid_container}>{apiData && apiData.items.splice(0,3).map((item, key) => {
             return(
                 <figure>       
                 <li key={key}>                
