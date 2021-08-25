@@ -26,6 +26,7 @@ export const Rooms = () => {
                     <p>Beskrivelse {item.description}</p>
                     <p>Antal personer {item.num_persons}</p>
                     <p>Pris {item.day_price_normal}</p>
+                    <img src={item.image} alt="" />
                 </li>
             )
         })}</ul>

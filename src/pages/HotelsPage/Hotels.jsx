@@ -8,7 +8,6 @@ export function HotelsPage() {
         <>
         <Hero/>
         <HotelMenu/>
-        <h3>Vores hoteller i</h3>
         <Countries/>
         </>
     )
