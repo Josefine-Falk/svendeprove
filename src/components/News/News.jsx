@@ -17,20 +17,18 @@ export const News = () => {
     console.log(apiData)
 
     return(
-        <>
+        <section className={Style.container}>
         <h3>Sidst nyt</h3>
-        <ul className={Style.grid_container}>{apiData && apiData.items.splice(0,3).map((item, key) => {
-            return(
-                       
+        <ul className={Style.gridContainer}>{apiData && apiData.items.splice(0,3).map((item, key) => {
+            return(     
                 <li key={key}>  
-                <figure>
+                <figure className={Style.img_container}>
                     <img className={Style.images} src={item.image} alt="" />
                     <figcaption>{item.title}</figcaption>
                  </figure>    
                 </li>
-               
             )
         })}</ul>
-        </>
+        </section>
     )
 }
