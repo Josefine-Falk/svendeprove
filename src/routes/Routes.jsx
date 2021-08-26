@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/LoginPage/LoginPage';
 import { ResevationsPage } from "../pages/ResevationsPage/ResevationsPage";
 import { RoomPage } from "../pages/RoomPage/RoomPage";
 import { HotelsPage} from "../pages/HotelsPage/Hotels";
+import { Form } from "../components/Form/Form";
 
 
 export function Routes () {
@@ -38,6 +39,10 @@ export function Routes () {
 
             <Route exact path="/loginpage">
                 <LoginPage/>
+            </Route>
+
+            <Route exact path="/form">
+                <Form/>
             </Route>
         </Switch>
     )

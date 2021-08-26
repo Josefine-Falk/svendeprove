@@ -24,6 +24,9 @@ export function Navigation() {
                 <li>
                     <Link to="loginpage">Login</Link>
                 </li>
+                <li>
+                    <Link to="/form">Form</Link>
+                </li>
             </ul>
         </nav>
         </>
