@@ -1,3 +1,4 @@
+import './Form.scss';
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -35,7 +36,7 @@ export const Form = () => {
             <div>
                 <label htmlFor="firstname">Fornavn:</label>
                 <input type="text" name="firstname" {...register('firstname', {required: true})} />
-                {errors.firstname && <span className="error">Du skal indtaste dit fornavn</span>}
+                {errors.firstname && <span className="error">Du mangler at indtaste dit fornavn</span>}
             </div>
             <div>
                 <label htmlFor="lastname">Efternavn:</label>
@@ -47,8 +48,8 @@ export const Form = () => {
             </div>
             <div>
                 <label htmlFor="email">Email:</label>
-                <input type="email" name="email" {...register('email', {required: true})} />
-                {errors.email && <span className="error">Du skal indtaste din email adresse</span>}
+                <input type="email" name="email" {...register('email', {required: true, pattern: /^\S+@\S+\.\S+$/})} />
+                {errors.email && <span className="error">Du mangler at indtaste din email adresse</span>}
             </div>
             <div>
                 <input type="submit"/>
