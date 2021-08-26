@@ -35,7 +35,7 @@ export const Form = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <label htmlFor="firstname">Fornavn:</label>
-                <input type="text" name="firstname" {...register('firstname', {required: true})} />
+                <input type="text" name="firstname" {...register('firstname', {required: true, minLength: 2})} />
                 {errors.firstname && <span className="error">Du mangler at indtaste dit fornavn</span>}
             </div>
             <div>
@@ -44,12 +44,12 @@ export const Form = () => {
             </div>
             <div>
                 <label htmlFor="zipcode">Postnummer:</label>
-                <input type="number" name="zipcode" {...register('zipcode', {required: true, pattern: /^[0-9]+$/i})} />
+                <input type="number" name="zipcode" {...register('zipcode', {required: true, pattern: /^[0-9]+$/i})}/>
             </div>
             <div>
                 <label htmlFor="email">Email:</label>
                 <input type="email" name="email" {...register('email', {required: true, pattern: /^\S+@\S+\.\S+$/})} />
-                {errors.email && <span className="error">Du mangler at indtaste din email adresse</span>}
+                {errors.email && <span className="error">Du mangler at indtaste en gyldig email adresse</span>}
             </div>
             <div>
                 <input type="submit"/>
