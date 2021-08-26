@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom"
 import { Style } from "./navigation.module.scss";
 import Logo from "../../assets/hotel-overlook-logo.png"
+
 export function Navigation() {
     
     return(
         <>
         <nav>
-            <img src={Logo} alt="" />
+            <Link to="/frontpage"><img src={Logo} alt="" /></Link>
             <ul>
                 <li>
                     <Link to="/frontpage">Forside</Link>
