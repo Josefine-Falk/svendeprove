@@ -28,6 +28,9 @@ export function Navigation() {
                 <li>
                     <Link to="/form">Form</Link>
                 </li>
+                <li>
+                    <Link to="/comments">Kommentar</Link>
+                </li>
             </ul>
         </nav>
         </>

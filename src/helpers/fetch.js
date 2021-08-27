@@ -1,3 +1,29 @@
+/**
+ * 
+ * @param {*} url Api Endpoint 
+ * @param {*} options Option Object
+ * @returns Array
+ */
+
+export async function myCostumFeth(url, options = null) {
+  if(!options) {
+    options = {
+      method: 'GET'
+    }
+  }
+  try{
+    const response = await fetch(url, options);
+    const result = await response.json();
+    return result;
+  }
+  catch(error) {
+    console.error(error);
+  }
+}
+
+
+
+
 export async function doFetch(url, type, data, key) {
 
     let method = type || 'GET'

@@ -9,6 +9,7 @@ import { ResevationsPage } from "../pages/ResevationsPage/ResevationsPage";
 import { RoomPage } from "../pages/RoomPage/RoomPage";
 import { HotelsPage} from "../pages/HotelsPage/Hotels";
 import { Form } from "../components/Form/Form";
+import { Comments } from "../components/Comments/Comments";
 
 
 export function Routes () {
@@ -43,6 +44,10 @@ export function Routes () {
 
             <Route exact path="/form">
                 <Form/>
+            </Route>
+
+            <Route exact path='/comments/:id'>
+                <Comments/>
             </Route>
         </Switch>
     )
